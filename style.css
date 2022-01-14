@@ -6,6 +6,7 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(45deg, #ffbee3,#fdd1e9);
 }
 /* commons classes */
 .container{
@@ -137,4 +138,47 @@ nav{
 .card a{
     text-decoration: none;
     color: #FF008E;
+}
+/* gallary section */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.photo img{
+    width:100%;
+    height:200px;
+    object-fit: cover;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+}
+.contact-left img{
+    width:100%;
+}
+.contact-right form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-field{
+    width: 100%;
+    margin:10px 0;
+    padding:10px;
+    outline:none;
+    font-family: inherit;
+    font-size: 16px;
+}
+.submit{
+    padding:10px 30px;
+    font-size: 16px;
+}
+footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
